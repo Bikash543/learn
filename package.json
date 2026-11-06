@@ -1,26 +1,25 @@
 {
-  "name": "learn",
-  "version": "0.1.0",
+  "name": "react-vite-app",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "vite --config client/vite.config.js",
+    "build": "vite build --config client/vite.config.js",
+    "preview": "vite preview --config client/vite.config.js"
   },
   "dependencies": {
-    "next": "16.4.4",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "@reduxjs/toolkit": "^2.14.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-redux": "^9.3.1",
+    "react-router-dom": "^7.18.5"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.4",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@tailwindcss/vite": "^4.3.4",
+    "@vitejs/plugin-react": "^5.0.2",
+    "daisyui": "^5.7.50",
+    "tailwindcss": "^4.3.4",
+    "vite": "^7.1.5"
   }
 }
